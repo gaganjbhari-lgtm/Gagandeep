@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about C variables, data types, declarations, and examples.">
+    <title>Variables in C | GAGANDEEP C CODE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">GAGANDEEP<span> C CODE</span></div>
+            <nav class="nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="variables.html" aria-current="page">Variables</a>
+                <a href="index.html#examples">Examples</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <p class="eyebrow">C programming fundamentals</p>
+                    <h1>Variables in C</h1>
+                    <p class="subtitle">
+                        Variables are named places in memory where a program stores data. Their type tells C what kind of value they hold.
+                    </p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#declaration">Learn the basics</a>
+                        <a class="btn secondary" href="index.html">Back to Home</a>
+                    </div>
+                </div>
+
+                <div class="code-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code>int age = 18;
+double height = 1.72;
+char grade = 'A';</code></pre>
+                </div>
+            </section>
+
+            <section class="features" id="declaration">
+                <article class="feature-card spotlight">
+                    <span class="tag">01 | BASICS</span>
+                    <h2>Declare and initialize</h2>
+                    <p>Declare a variable by writing its type and name. You can assign it a starting value at the same time.</p>
+                    <pre><code>int score;        /* declaration */
+score = 100;      /* assignment */
+
+int lives = 3;    /* declaration + initialization */</code></pre>
+                </article>
+
+                <article class="feature-card">
+                    <span class="tag">02 | TYPES</span>
+                    <h2>Common data types</h2>
+                    <p>Choose a type that matches the kind of data you need to store.</p>
+                    <pre><code>int count = 12;          /* whole number */
+float temperature = 21.5f; /* decimal number */
+double price = 19.99;    /* more precision */
+char initial = 'G';      /* one character */</code></pre>
+                </article>
+
+                <article class="feature-card">
+                    <span class="tag">03 | RULES</span>
+                    <h2>Naming variables</h2>
+                    <p>Names can contain letters, digits, and underscores. They cannot start with a digit, contain spaces, or be C keywords. Names are case-sensitive.</p>
+                    <pre><code>int student_age;  /* valid */
+int score2;       /* valid */
+int 2score;       /* invalid: starts with a digit */</code></pre>
+                </article>
+
+                <article class="feature-card">
+                    <span class="tag">04 | EXAMPLE</span>
+                    <h2>Use variables in a program</h2>
+                    <p>This example reads two whole numbers, adds them, and prints the result.</p>
+                    <pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main()
+{
+    int first_number;
+    int second_number;
+    int sum;
+
+    printf("Enter two numbers: ");
+    if (scanf("%d %d", &amp;first_number, &amp;second_number) != 2) {
+        printf("Invalid input.\n");
+        return 1;
+    }
+
+    sum = first_number + second_number;
+    printf("Sum: %d\n", sum);
+
+    return 0;
+}</code></pre>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
